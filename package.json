@@ -1,0 +1,26 @@
+{
+  "name": "wedding_invitation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaelatimpu/WeddingWebsite.git"
+  },
+  "keywords": [
+    "wedding",
+    "seb&mihaela"
+  ],
+  "author": "Mihaela Timpu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihaelatimpu/WeddingWebsite/issues"
+  },
+  "homepage": "https://github.com/mihaelatimpu/WeddingWebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
