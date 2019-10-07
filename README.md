@@ -1,10 +1,10 @@
 
 # Technologies used
 ## Front-end
-  - html
-  - css
-  - Javascript
-  - bootsrap
+  - HTML
+  - CSS
+  - Javaccript
+  - Bootstrap
   
 ## Back-end
   - NodeJS
