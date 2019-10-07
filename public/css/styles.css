@@ -56,7 +56,6 @@ div {
 	display: block;
 }
 .timer {
-	transform: translateY(-50%);
 	display: inline-block;
 	vertical-align: middle;
 	zoom: 1;
@@ -67,9 +66,8 @@ div {
 	font-size: 14px;
 	width: 120px;
 	height: 120px;
-	margin:0;
 	right: 5%;
-	top: 25%;
+	top: 10%;
 	line-height: 37px;
 	color: #222;
 	font-family: "Open Sans"!important;
