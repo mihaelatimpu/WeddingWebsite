@@ -1,17 +1,17 @@
 
-# Technologies used:
-## Front-end technologies:
+# Technologies used
+## Front-end
   - html
   - css
   - Javascript
   - bootsrap
   
-## Back-end technologies:
+## Back-end
   - NodeJS
   - Postgresql
   - Express
   
-## Deploy
+## Deployment
  - Heroku
 
 # Useful links
