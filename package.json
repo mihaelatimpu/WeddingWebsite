@@ -22,7 +22,8 @@
   "homepage": "https://github.com/mihaelatimpu/WeddingWebsite#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pg": "^7.12.1"
   },
   "engines": {
     "node": "10.16.3"
