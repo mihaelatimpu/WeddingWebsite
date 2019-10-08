@@ -21,6 +21,7 @@ app.get('/', function (req, res) {
 
 app.get('/users', db.getUsers)
 app.post('/users', db.createUser)
+app.post('/confirmation', db.addConfirmation)
 app.put('/users/:id', db.updateUser)
 
 
