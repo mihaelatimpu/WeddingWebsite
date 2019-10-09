@@ -17,7 +17,10 @@ const getUsers = (request, response) => {
 		response.status(200).json(results.rows)
 	})
 }
-var alert;  //  added this in to fix
+
+
+
+const path = require('path')
 const addConfirmation = (request, response) => {
 	const { name, partnerName, children,
 		email, phoneNumber, comingFor, foodAllergies, comments } = request.body
@@ -31,10 +34,11 @@ const addConfirmation = (request, response) => {
 				if (error) {
 					throw error
 				}
-				response.sendFile(path.join(__dirname + '/public/pages/form_success.html'));
+				response.sendFile(path.resolve(path.dirname(require.main.filename) + '/public/pages/form_success.html'));
 			})
 
 	}
+
 
 	const createUser = (request, response) => {
 		const { name, email } = request.body
