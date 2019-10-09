@@ -17,51 +17,55 @@ const getUsers = (request, response) => {
 		response.status(200).json(results.rows)
 	})
 }
+var alert;  //  added this in to fix
 const addConfirmation = (request, response) => {
 	const { name, partnerName, children,
 		email, phoneNumber, comingFor, foodAllergies, comments } = request.body
+		/*response.status(201).send(`name: `+name + ', partnerName '+partnerName +', children '+children +', email '+email +', phoneNumber '+phoneNumber
+		+', comingFor '+comingFor +', foodAllergies '+foodAllergies +', comments '+comments)*/
+		// response.status(201).send(request.body)
+		pool.query('INSERT INTO '+presenceTable+' (name, partnerName, children, email, phoneNumber, comingFor, foodAllergies, comments) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
+			[name, partnerName, children,
+			email, phoneNumber, comingFor, foodAllergies, comments]
+			, (error, results) => {
+				if (error) {
+					throw error
+				}
+				response.sendFile(path.join(__dirname + '/public/pages/form_success.html'));
+			})
 
-	pool.query('INSERT INTO '+presenceTable+' (name, partnerName, children, email, phoneNumber, comingFor, foodAllergies, comments) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
-	 [name, partnerName, children,
-		email, phoneNumber, comingFor, foodAllergies, comments]
-	 , (error, results) => {
-		if (error) {
-			throw error
-		}
-		response.status(201).send(`Confirmation added with ID: ${results.insertId}`)
-	})
-}
+	}
 
-const createUser = (request, response) => {
-	const { name, email } = request.body
+	const createUser = (request, response) => {
+		const { name, email } = request.body
 
-	pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email], (error, results) => {
-		if (error) {
-			throw error
-		}
-		response.status(201).send(`User added with ID: ${results.insertId}`)
-	})
-}
-
-const updateUser = (request, response) => {
-	const id = parseInt(request.params.id)
-	const { name, email } = request.body
-
-	pool.query(
-		'UPDATE users SET name = $1, email = $2 WHERE id = $3',
-		[name, email, id],
-		(error, results) => {
+		pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email], (error, results) => {
 			if (error) {
 				throw error
 			}
-			response.status(200).send(`User modified with ID: ${id}`)
-		}
-		)
-}
+			response.status(201).send(`User added with ID: ${results.insertId}`)
+		})
+	}
 
-module.exports = {
-	getUsers,
-	createUser,
-	addConfirmation,
-	updateUser,
-}
+	const updateUser = (request, response) => {
+		const id = parseInt(request.params.id)
+		const { name, email } = request.body
+
+		pool.query(
+			'UPDATE users SET name = $1, email = $2 WHERE id = $3',
+			[name, email, id],
+			(error, results) => {
+				if (error) {
+					throw error
+				}
+				response.status(200).send(`User modified with ID: ${id}`)
+			}
+			)
+	}
+
+	module.exports = {
+		getUsers,
+		createUser,
+		addConfirmation,
+		updateUser,
+	}
