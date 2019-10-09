@@ -1,0 +1,110 @@
+#invitationContainer{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #5d5b5b;
+    text-align: center;
+}
+
+.col-md-6 {
+    display:inline-block;
+}
+
+.separator-heart {
+	border-bottom: 1px solid #612d7f;
+	margin-bottom: 20px;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+    height: 50px;
+}
+p{
+    font-family: 'Montserrat';
+
+}
+
+
+.invitation-names {
+    margin: 20px 0;
+    font-family: 'Dancing Script';
+}
+
+.invitation.invitation-bg h3 {
+    line-height: 1.2;
+}
+
+.heart_image{
+    position: relative;
+    width: 50px;
+    height: 45px;
+    animation: heartbeat 2s infinite;
+    margin:0 auto
+}
+
+
+.heart_image:before,
+.heart_image:after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: #612d7f;
+    -moz-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart_image:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
