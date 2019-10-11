@@ -6,6 +6,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/40af5889b7.js" crossorigin="anonymous"></script>
 	<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -17,15 +18,15 @@
 	<div id="header">
 		<div class="theme-header-block">
 			<p>
-				<span class="weddingDate">We are getting married</span>
+				<span class="weddingDate text-we-are-getting-married">We are getting married</span>
 				<span class="app-custom-font-name">Sébastien & Mihaela</span>
-				<span class="weddingDate">2nd of May 2020</span>
+				<span class="weddingDate text-wedding-date-formatted">2nd of May 2020</span>
 			</p>
 		</div>
 		<div class="timer">
-			<div>remaining</div>
+			<div class="text-remaining">remaining</div>
 			<div id="timer_days">200</div>
-			<div >days</div>
+			<div class="text-days">days</div>
 		</div>
 	</div>
 
@@ -38,30 +39,32 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link text-home" href="home.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="confirm.html">Confirm your presence</a>
+					<a class="nav-link active text-confirm" href="confirm.html">Confirm your presence</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="information.html">Useful information</a>
+					<a class="nav-link text-information" href="information.html">Useful information</a>
 				</li>
 				<!-- <li class="nav-item">
-					<a class="nav-link" href="photos.html">Wedding photos</a>
+					<a class="nav-link text-wedding-photos" href="photos.html">Wedding photos</a>
 				</li> -->
 				<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact us</a>
+					<a class="nav-link text-contact-us" href="contact.html">Contact us</a>
 				</li>
 			</ul>
 		</div>
 		<div class="nav-item btn-group dropleft">
 			<button id ="languageDropdown" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Language
+				<i class="fas fa-globe-asia"></i>
+				<span id ="text-language">
+				Language</span>
 			</button>
 			<div class="dropdown-menu" aria-labelledby="languageDropdown" id="language">
-				<a class="dropdown-item" href="#">English</a>
-				<a class="dropdown-item" href="#">Romanian</a>
-				<a class="dropdown-item" href="#">French</a>
+				<a class="dropdown-item" href="#" onClick="translatePage('en')">English</a>
+				<a class="dropdown-item" href="#"onClick="translatePage('ro')">Romanian</a>
+				<a class="dropdown-item" href="#"onClick="translatePage('fr')">French</a>
 			</div>
 		</div>
 	</nav>
@@ -129,8 +132,9 @@
 
 
 
-
-
+	<script type="text/javascript" src="../js/language_en.js"></script>
+	<script type="text/javascript" src="../js/language_ro.js"></script>
+	<script type="text/javascript" src="../js/language_fr.js"></script>
 	<script type="text/javascript" src="../js/timer.js"></script>
 	<script type="text/javascript" src="../js/translate.js"></script>
 </body>
