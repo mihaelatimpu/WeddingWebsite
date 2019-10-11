@@ -1,15 +1,21 @@
-.presentationImage{
-	width: 10em;
-	height: 10em;
-	border-radius: 50%;
+.thumbnail{
 	margin:5% auto;
+	background: #ecf0f1;
+	color: #2c3e50;
 }
-.row.justify-content-around{
-	font-family: "Montserrat";
-	text-align: center;
-	font-size: 12px;
+.presentationImage {
+	width: 100%;
+	height: 200px;
 }
 .hotelTitle{
+	font-family: "Montserrat";
 	font-weight: bold;
 	font-size: 15px;
+	text-align: center;
+}
+.hotelInfo {
+	font-family: "Montserrat";
+	font-size: 13px;
+	text-align: center;
+	line-height: 10px;
 }
