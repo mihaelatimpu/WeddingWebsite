@@ -27,6 +27,10 @@ app.get('/confirm.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/confirm.html'));
 });
 
+app.get('/header.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/pages/header.html'));
+});
+
 app.get('/contact.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/contact.html'));
 });

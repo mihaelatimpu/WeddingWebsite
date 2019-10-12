@@ -14,13 +14,6 @@ function getCookieData(cookie_name) {
 	return results ? decodeURIComponent(results[2]) : null;
 }
 
-function initPage() {
-	var language = getCookieData("lboxcook");
-	if(language){
-		translatePage(language);
-	}
-}
-
 var supportedLanguages = [
 ["ro", texts_ro],
 ["en", texts_en],
@@ -59,4 +52,10 @@ function translatePage(language) {
 
 }
 
-initPage();
+
+function translateCurrentPage() {
+	var language = getCookieData("lboxcook");
+	if(language){
+		translatePage(language);
+	}
+}

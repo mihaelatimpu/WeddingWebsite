@@ -14,4 +14,3 @@ function setTimer() {
 	htmlElement.innerText = remainingDays;
 	// body...
 }
-setTimer();

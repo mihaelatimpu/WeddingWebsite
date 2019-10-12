@@ -14,61 +14,8 @@
 </head>
 <body>
 
-	<!-- Header part -->
-	<div id="header">
-		<div class="theme-header-block">
-			<p>
-				<span class="weddingDate text-we-are-getting-married">We are getting married</span>
-				<span class="app-custom-font-name">Sébastien & Mihaela</span>
-				<span class="weddingDate text-wedding-date-formatted">2nd of May 2020</span>
-			</p>
-		</div>
-		<div class="timer">
-			<div class="text-remaining">remaining</div>
-			<div id="timer_days">200</div>
-			<div class="text-days">days</div>
-		</div>
-	</div>
-
-	<!-- Nav bar -->
-	<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link text-home" href="home.html">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active text-confirm" href="confirm.html">Confirm your presence</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-information" href="information.html">Useful information</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link text-wedding-photos" href="photos.html">Wedding photos</a>
-				</li> -->
-				<li class="nav-item">
-					<a class="nav-link text-contact-us" href="contact.html">Contact us</a>
-				</li>
-			</ul>
-		</div>
-		<div class="nav-item btn-group dropleft">
-			<button id ="languageDropdown" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<i class="fas fa-globe-asia"></i>
-				<span id ="text-language">
-				Language</span>
-			</button>
-			<div class="dropdown-menu" aria-labelledby="languageDropdown" id="language">
-				<a class="dropdown-item" href="#" onClick="translatePage('en')">English</a>
-				<a class="dropdown-item" href="#"onClick="translatePage('ro')">Romanian</a>
-				<a class="dropdown-item" href="#"onClick="translatePage('fr')">French</a>
-			</div>
-		</div>
-	</nav>
-
+	<div w3-include-html="header.html"></div>
+	<span id="pageName" class="option-confirm"></span>
 
 	<!-- Body -->
 	<div class="jumbotron">
@@ -137,5 +84,6 @@
 	<script type="text/javascript" src="../js/language_fr.js"></script>
 	<script type="text/javascript" src="../js/timer.js"></script>
 	<script type="text/javascript" src="../js/translate.js"></script>
+	<script type="text/javascript" src="../js/includeHeader.js"></script>
 </body>
 </html>
