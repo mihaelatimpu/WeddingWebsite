@@ -31,6 +31,7 @@ var texts_ro = [
 ["text-submit", "Submit" ],
 
 /*confirm-presence*/
+["text-confirm-presence", "Confirmare prezență" ],
 ["text-partner-name", "Numele partenerului / partenerei (dacă veniți însoțit)" ],
 ["text-children", "Copii (vârsta)" ],
 ["text-email", "Email" ],

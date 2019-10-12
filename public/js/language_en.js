@@ -31,6 +31,7 @@ var texts_en = [
 ["text-submit", "Submit" ],
 
 /*confirm-presence*/
+["text-confirm-presence", "Confirm your presence" ],
 ["text-partner-name", "Your partner's name (blanc if none)" ],
 ["text-children", "Children(age)" ],
 ["text-email", "Email" ],
