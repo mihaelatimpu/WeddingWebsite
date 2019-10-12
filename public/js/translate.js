@@ -36,7 +36,7 @@ function translateTextsOnPage(selectedLanguage){
 	for (var [key, value] of myMap) {
 		var list = document.getElementsByClassName(key)
 		if(list.length > 0){
-			list[0].innerHTML = value;
+			list[0].innerText = value;
 		}
 		if(key == "text-"+selectedLanguage){
 			$("#text-language")[0].innerHTML = value;
