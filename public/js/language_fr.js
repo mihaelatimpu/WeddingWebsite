@@ -3,8 +3,8 @@ var texts_fr = [
 /*header*/
 ["text-we-are-getting-married", "Nous nous marions" ],
 ["text-wedding-date-formatted", "Le 2 mai 2020" ],
-["text-remaining", "jours" ],
-["text-days", "restants" ],
+["text-remaining", "il reste" ],
+["text-days", "jours" ],
 
 /*menu*/
 ["text-home", "Acceuil" ],
@@ -26,13 +26,14 @@ var texts_fr = [
 ["text-not-coming", "Je ne viens pas" ],
 
 /*confirm-absence*/
+["text-confirm-not-comming", "Confirmer votre absence" ],
 ["text-name", "Votre nom" ],
 ["text-reason", "La raison de votre absence? (optionnel)" ],
 ["text-submit", "Soumettre" ],
 
 /*confirm-presence*/
 ["text-confirm-presence", "Confirmer votre presence" ],
-["text-partner-name", "Le nome de votre partenaire (blanc si célibataire)" ],
+["text-partner-name", "Le nom de votre partenaire (blanc si célibataire)" ],
 ["text-children", "Enfants(age)" ],
 ["text-email", "Email" ],
 ["text-phone-number", "Numéro de téléphone" ],
@@ -40,7 +41,7 @@ var texts_fr = [
 ["text-choose", "Choisissez..." ],
 ["text-both", "les deux mariés" ],
 ["text-none", "Aucun" ],
-["text-address", "Votre adresse (si vousdésirez recevoir une invitation papier)" ],
+["text-address", "Votre adresse (si vous désirez recevoir une invitation papier)" ],
 ["text-food-allergies", "Allergies" ],
 ["text-comments", "Autres informations utiles?" ],
 
@@ -64,5 +65,5 @@ var texts_fr = [
 ["text-line-2", "se réjouissent de votre compagnie" ],
 ["text-line-3", "lors de la célébration de leur mariage" ],
 ["text-line-4", "Samedi" ],
-["text-line-5", "2 May 2020, 10h00" ]
+["text-line-5", "2 Mai 2020, 10h00" ]
 ];

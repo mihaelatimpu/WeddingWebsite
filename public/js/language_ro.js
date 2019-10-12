@@ -26,6 +26,7 @@ var texts_ro = [
 ["text-not-coming", "Nu voi veni" ],
 
 /*confirm-absence*/
+["text-confirm-not-comming", "Confirmați faptul că nu puteți veni" ],
 ["text-name", "Numele dumneavoastră" ],
 ["text-reason", "Ați putea să ne spuneți de ce nu veniți? (opțional)" ],
 ["text-submit", "Submit" ],

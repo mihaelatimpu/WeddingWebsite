@@ -26,6 +26,7 @@ var texts_en = [
 ["text-not-coming", "I am not coming" ],
 
 /*confirm-absence*/
+["text-confirm-not-comming", "Confirm that you are not coming" ],
 ["text-name", "Your name" ],
 ["text-reason", "Could you tell us why you are not coming? (optional)" ],
 ["text-submit", "Submit" ],
