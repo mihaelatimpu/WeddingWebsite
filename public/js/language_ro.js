@@ -31,7 +31,7 @@ var texts_ro = [
 ["text-submit", "Submit" ],
 
 /*confirm-presence*/
-["text-partner-name", "Numele partenerului/partenerei (dacă veniți însoțit)" ],
+["text-partner-name", "Numele partenerului / partenerei (dacă veniți însoțit)" ],
 ["text-children", "Copii (vârsta)" ],
 ["text-email", "Email" ],
 ["text-phone-number", "Număr telefon" ],
@@ -48,7 +48,7 @@ var texts_ro = [
 ["text-could-not-find-page-description", "Oups.. Ceva nu a mers chiar cum trebuie.. vă rugăm să ne contactați și vom rezolva problema în cel mai scurt timp.." ],
 
 /*form-absence-success*/
-["text-data-submitted-success-absence", "Your data has been successfully submitted. We are sorry you cannot join us." ],
+["text-data-submitted-success-absence", "Informațiile dumneavoastră au fost salvate cu sucess. Ne pare rău fiindcă nu puteți ajunge." ],
 
 /*information*/
 ["text-we-will-update-later", "Vom adăuga aici alte informații organizatorice în cel mai scurt timp posibil." ],
@@ -60,8 +60,8 @@ var texts_ro = [
 
 /*home*/
 ["text-line-1", "Doamna Chantal Boutin împreună cu doamna Maria Timpu-Cuna" ],
-["text-line-2", "vă roagă să le onorați cu prezența" ],
-["text-line-3", "pntru a celebra căsătoria copiilor lor" ],
+["text-line-2", "vă roagă să le onorați cu prezența dumneavoastră" ],
+["text-line-3", "pentru a celebra căsătoria copiilor lor" ],
 ["text-line-4", "Sâmbătă" ],
 ["text-line-5", "2 Mai 2020, la ora 10.00am" ]
 ];
