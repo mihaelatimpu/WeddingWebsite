@@ -19,13 +19,22 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/home.html'));
 });
 
-app.get('/users', db.getUsers)
-app.post('/confirmation', db.addConfirmation)
+app.get('/confirmations', db.getPresences)
+app.get('/absences', db.getAbsences)
+app.post('/confirmation', db.addPresence)
+app.post('/confirmAbsence', db.addAbsence)
 
 
 app.get('/confirm.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/confirm.html'));
 });
+app.get('/confirm_presence.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/pages/confirm_presence.html'));
+});
+app.get('/confirm_absence.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/pages/confirm_absence.html'));
+});
+
 
 app.get('/header.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/header.html'));

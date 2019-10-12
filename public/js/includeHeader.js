@@ -33,11 +33,9 @@ function includeHTML() {
 function updateSelectedMenuOption(){
 
   var pageName = document.getElementById("pageName");
-  console.log(pageName.className);
 
   var options = document.getElementsByClassName(pageName.className);
   for(var element of options){
-    console.log(element.className);
     if(hasClass(element, 'nav-link')){
       element.classList.add('active');
     }

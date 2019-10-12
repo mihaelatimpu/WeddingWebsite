@@ -8,7 +8,7 @@ var texts_ro = [
 
 /*menu*/
 ["text-home", "Acasă" ],
-["text-confirm", "Confirmați prezența" ],
+["text-confirm", "Răspundeți invitației noastre" ],
 ["text-information", "Informații utile" ],
 ["text-wedding-photos", "Poze" ],
 ["text-contact-us", "Contact" ],

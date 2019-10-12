@@ -8,7 +8,7 @@ var texts_en = [
 
 /*menu*/
 ["text-home", "Home" ],
-["text-confirm", "Confirm your presence" ],
+["text-confirm", "Answer to our invitation" ],
 ["text-information", "Useful information" ],
 ["text-wedding-photos", "Wedding photos" ],
 ["text-contact-us", "Contact us" ],

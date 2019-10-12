@@ -1,0 +1,19 @@
+
+<h1>Confirm that you are not coming</h1>
+<p>We are sorry you cannot come</p>
+<br>
+
+<form action="/confirmAbsence" method="post">
+
+	<div class="form-group">
+		<label for="name">Your name</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="e.g. Jane Doe" required>
+	</div>
+	
+	<div class="form-group">
+		<label for="reason">Could you tell us why you are not coming? (optional)</label>
+		<textarea class="form-control" id="reason" name="reason"> </textarea>
+	</div>
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
