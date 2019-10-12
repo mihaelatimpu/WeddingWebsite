@@ -29,7 +29,7 @@ var texts_ro = [
 ["text-confirm-not-comming", "Confirmați faptul că nu puteți veni" ],
 ["text-name", "Numele dumneavoastră" ],
 ["text-reason", "Ați putea să ne spuneți de ce nu veniți? (opțional)" ],
-["text-submit", "Submit" ],
+["text-submit", "Trimitere" ],
 
 /*confirm-presence*/
 ["text-confirm-presence", "Confirmare prezență" ],
