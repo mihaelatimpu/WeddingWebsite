@@ -20,25 +20,48 @@ var texts_ro = [
 ["text-thank-you", "Mulțumim!" ],
 ["text-data-submitted-success", "Informațiile dumneavoastră au fost salvate cu sucess. Vă așteptăm la nuntă!" ],
 
-/*home*/
-["", "" ],
-["", "" ],
-["", "" ],
+/*confirm*/
+["text-please-choose-option", "Alegeți una din opțiunile de mai jos: " ],
+["text-coming", "Voi veni" ],
+["text-not-coming", "Nu voi veni" ],
+
+/*confirm-absence*/
+["text-name", "Numele dumneavoastră" ],
+["text-reason", "Ați putea să ne spuneți de ce nu veniți? (opțional)" ],
+["text-submit", "Submit" ],
 
 /*confirm-presence*/
-["", "" ],
-["", "" ],
-["", "" ],
-["", "" ],
+["text-partner-name", "Numele partenerului/partenerei (dacă veniți însoțit)" ],
+["text-children", "Copii (vârsta)" ],
+["text-email", "Email" ],
+["text-phone-number", "Număr telefon" ],
+["text-coming-for", "Vin pentru" ],
+["text-choose", "Alegeți..." ],
+["text-both", "Amândoi" ],
+["text-none", "Niciunul" ],
+["text-address", "Adresa dumneavoatră (dacă doriți și invitație scrisă)" ],
+["text-food-allergies", "Alergii mâncare" ],
+["text-comments", "Observații suplimentare: Mai e ceva ce ar trebui să știm?" ],
+
+/*error*/
+["text-could-not-find-page", "Pagina nu a putut fi găsită.." ],
+["text-could-not-find-page-description", "Oups.. Ceva nu a mers chiar cum trebuie.. vă rugăm să ne contactați și vom rezolva problema în cel mai scurt timp.." ],
+
+/*form-absence-success*/
+["text-data-submitted-success-absence", "Your data has been successfully submitted. We are sorry you cannot join us." ],
 
 /*information*/
-["", "" ],
-["", "" ],
-["", "" ],
+["text-we-will-update-later", "Vom adăuga aici alte informații organizatorice în cel mai scurt timp posibil." ],
+["text-book-a-hotel", "Rezervă un hotel" ],
+["text-tel-bord-de-la-dhui", "telefon: +33 662 170 115" ],
+["text-mail-jung", "email: info@jungbrunnen-orges.com" ],
+["text-phone-jung", "telefon: +33 681 646 394" ],
 ["", "" ],
 
-/*contact*/
-["", "" ],
-["", "" ],
-["", "" ]
+/*home*/
+["text-line-1", "Doamna Chantal Boutin împreună cu doamna Maria Timpu-Cuna" ],
+["text-line-2", "vă roagă să le onorați cu prezența" ],
+["text-line-3", "pntru a celebra căsătoria copiilor lor" ],
+["text-line-4", "Sâmbătă" ],
+["text-line-5", "2 Mai 2020, la ora 10.00am" ]
 ];

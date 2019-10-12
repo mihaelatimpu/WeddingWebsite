@@ -32,14 +32,14 @@ const getAbsences = (request, response) => {
 const path = require('path')
 const addPresence = (request, response) => {
 	const { name, partnerName, children,
-		email, phoneNumber, comingFor, foodAllergies, comments } = request.body
+		email, phoneNumber, comingFor, address, foodAllergies, comments } = request.body
 		/*response.status(201).send(`name: `+name + ', partnerName '+partnerName +', children '+children +', email '+email +', phoneNumber '+phoneNumber
-		+', comingFor '+comingFor +', foodAllergies '+foodAllergies +', comments '+comments)*/
+		+', comingFor '+comingFor +', address '+address +', foodAllergies '+foodAllergies +', comments '+comments)*/
 		// response.status(201).send(request.body)
 		var currentTime = new Date();
-		pool.query('INSERT INTO '+presenceTable+' (name, partnerName, children, email, phoneNumber, comingFor, foodAllergies, comments, date) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)',
+		pool.query('INSERT INTO '+presenceTable+' (name, partnerName, children, email, phoneNumber, comingFor, address, foodAllergies, comments, date) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
 			[name, partnerName, children,
-			email, phoneNumber, comingFor, foodAllergies, comments, currentTime]
+			email, phoneNumber, comingFor, address, foodAllergies, comments, currentTime]
 			, (error, results) => {
 				if (error) {
 					throw error
