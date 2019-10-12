@@ -36,7 +36,7 @@ const addPresence = (request, response) => {
 		/*response.status(201).send(`name: `+name + ', partnerName '+partnerName +', children '+children +', email '+email +', phoneNumber '+phoneNumber
 		+', comingFor '+comingFor +', foodAllergies '+foodAllergies +', comments '+comments)*/
 		// response.status(201).send(request.body)
-		var currentTime = new Date().getTime();
+		var currentTime = new Date();
 		pool.query('INSERT INTO '+presenceTable+' (name, partnerName, children, email, phoneNumber, comingFor, foodAllergies, comments, date) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)',
 			[name, partnerName, children,
 			email, phoneNumber, comingFor, foodAllergies, comments, currentTime]
@@ -54,7 +54,7 @@ const addAbsence = (request, response) => {
 	const { name, reason } = request.body
 		/*response.status(201).send(`name: `+name + ', reason '+reason)*/
 		// response.status(201).send(request.body)
-		var currentTime = new Date().getTime();
+		var currentTime = new Date();
 		pool.query('INSERT INTO '+absenceTable+' (name, reason, date) VALUES ($1, $2, $3)',
 			[name, reason, currentTime]
 			, (error, results) => {

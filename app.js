@@ -57,7 +57,7 @@ app.get('/photos.html', function (req, res) {
 });
 
 app.get('*', function (req, res) {
-    res.status(404).send("Page not found");
+    res.sendFile(path.join(__dirname + '/public/pages/error.html'));
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
