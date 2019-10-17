@@ -1,14 +1,3 @@
-$(function(){
-
-	/*$(".dropdown-menu a").click(function(){
-		var cookieValue = $(this).id;
-		translatePage(cookieValue);
-		document.cookie = "lboxcook=" + encodeURIComponent(cookieValue);
-
-	});*/
-});
-
-
 function getCookieData(cookie_name) {
 	var results = document.cookie.match ('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
 	return results ? decodeURIComponent(results[2]) : null;
@@ -54,8 +43,20 @@ function translatePage(language) {
 
 
 function translateCurrentPage() {
+	// For now there is only one parameter. If we decide to add multiple parameter, 
+	// this will have to be replaced with a split method
+	var paramLanguage = window.location.search.replace("?lang=","");
+	if(paramLanguage){
+		console.log("Translating to query language: "+paramLanguage);
+		translatePage(paramLanguage);
+		return;
+	}
 	var language = getCookieData("lboxcook");
 	if(language){
+		console.log("Translating to cookie language: "+language);
 		translatePage(language);
+	} else {
+		console.log("No language could be found.. Translating to default: en");
+		translatePage("en");
 	}
 }
