@@ -26,7 +26,7 @@ app.post('/confirmAbsence', db.addAbsence)
 
 
 app.get('/getConfirmations.html', function (req, res) {
-    res.sendFile(path.join(__dirname + '/public/pages/confirms.html'));
+    res.sendFile(path.join(__dirname + '/public/pages/confirmations.html'));
 });
 
 app.get('/confirm.html', function (req, res) {
