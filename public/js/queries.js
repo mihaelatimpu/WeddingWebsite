@@ -11,6 +11,9 @@ const absenceTable = 'confirmAbsence';
 
 
 const getPresences = (request, response) => {
+
+	var sortBy = window.location.search.replace("?sortBy=","");
+	console.log(sortBy);
 	pool.query('SELECT * FROM '+presenceTable+' ORDER BY id ASC', (error, results) => {
 		if (error) {
 			throw error
