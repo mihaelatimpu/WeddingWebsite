@@ -11,9 +11,11 @@ const absenceTable = 'confirmAbsence';
 
 
 const getPresences = (request, response) => {
-
-	var sortBy = window.location.search.replace("?sortBy=","");
-	console.log(sortBy);
+	for (const key in request.query) {
+		console.log(key, request.query[key]);
+	}
+	var sortBy = request.query[sortBy];
+	console.log("sorting by: "+sortBy);
 	pool.query('SELECT * FROM '+presenceTable+' ORDER BY id ASC', (error, results) => {
 		if (error) {
 			throw error
@@ -53,8 +55,8 @@ const addPresence = (request, response) => {
 	}
 
 
-const addAbsence = (request, response) => {
-	const { name, reason } = request.body
+	const addAbsence = (request, response) => {
+		const { name, reason } = request.body
 		/*response.status(201).send(`name: `+name + ', reason '+reason)*/
 		// response.status(201).send(request.body)
 		var currentTime = new Date();
