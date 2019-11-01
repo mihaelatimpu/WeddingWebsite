@@ -65,5 +65,5 @@ var texts_ro = [
 ["text-line-2", "vă roagă să le onorați cu prezența dumneavoastră" ],
 ["text-line-3", "pentru a celebra căsătoria copiilor lor" ],
 ["text-line-4", "Sâmbătă" ],
-["text-line-5", "2 Mai 2020, la ora 10.00am" ]
+["text-line-5", "2 Mai 2020, la ora 14.00" ]
 ];

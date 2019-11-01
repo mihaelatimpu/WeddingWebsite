@@ -65,5 +65,5 @@ var texts_fr = [
 ["text-line-2", "se réjouissent de votre compagnie" ],
 ["text-line-3", "lors de la célébration de leur mariage" ],
 ["text-line-4", "Samedi" ],
-["text-line-5", "2 Mai 2020, 10h00" ]
+["text-line-5", "2 Mai 2020, 14h00" ]
 ];
