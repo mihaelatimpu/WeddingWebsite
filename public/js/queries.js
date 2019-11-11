@@ -15,7 +15,7 @@ const getPresences = (request, response) => {
 	if(!sortBy){
 		sortBy = "id";
 	}
-	pool.query('SELECT * FROM '+presenceTable+' ORDER BY '+sortBy+' ASC', (error, results) => {
+	pool.query('SELECT * FROM '+presenceTable+' ORDER BY '+sortBy+' DESC', (error, results) => {
 		if (error) {
 			throw error
 		}
