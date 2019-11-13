@@ -19,6 +19,8 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/home.html'));
 });
 
+app.get('/children', db.getChildren)
+app.get('/partners', db.getPartners)
 app.get('/confirmations', db.getPresences)
 app.get('/absences', db.getAbsences)
 app.post('/confirmation', db.addPresence)

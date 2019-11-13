@@ -22,6 +22,41 @@ const getPresences = (request, response) => {
 		response.status(200).json(results.rows)
 	})
 }
+
+const getChildren = (request, response) => {
+	var sortBy = request.query[sortBy];
+	var sortOrder = request.query[sortOrder];
+	if(!sortBy){
+		sortBy = "parentId";
+	}
+	if(!sortOrder){
+		sortOrder = "ASC";
+	}
+	pool.query('SELECT * FROM children ORDER BY '+sortBy+' '+sortOrder, (error, results) => {
+		if (error) {
+			throw error
+		}
+		response.status(200).json(results.rows)
+	})
+}
+
+const getPartners = (request, response) => {
+	var sortBy = request.query[sortBy];
+	var sortOrder = request.query[sortOrder];
+	if(!sortBy){
+		sortBy = "partnerId";
+	}
+	if(!sortOrder){
+		sortOrder = "ASC";
+	}
+	pool.query('SELECT * FROM partners ORDER BY '+sortBy+' '+sortOrder, (error, results) => {
+		if (error) {
+			throw error
+		}
+		response.status(200).json(results.rows)
+	})
+}
+
 const getAbsences = (request, response) => {
 	pool.query('SELECT * FROM '+absenceTable+' ORDER BY id ASC', (error, results) => {
 		if (error) {
@@ -71,6 +106,8 @@ const addPresence = (request, response) => {
 	}
 
 	module.exports = {
+		getChildren,
+		getPartners,
 		getPresences,
 		getAbsences,
 		addPresence,
