@@ -34,6 +34,11 @@ app.get('/getRejections.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/rejections.html'));
 });
 
+
+app.get('/invites.html', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/pages/invites.html'));
+});
+
 app.get('/confirm.html', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/pages/confirm.html'));
 });
