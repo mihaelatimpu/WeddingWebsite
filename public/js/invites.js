@@ -132,8 +132,8 @@ function displayInvitations(invitations){
 		var fields = invitation.getMainFields();
 
 		var columnIndex = 0;
-		//row.insertCell(columnIndex++).outerHTML = "<th>"+invitation.id+"</th>";
-		row.insertCell(columnIndex++).outerHTML = "<th>"+rowIndex+"</th>";
+		row.insertCell(columnIndex++).outerHTML = "<th>"+invitation.id+"</th>";
+		//row.insertCell(columnIndex++).outerHTML = "<th>"+rowIndex+"</th>";
 		for (var [key, value] of fields) {
 			row.insertCell(columnIndex++).innerHTML = value;
 		}
